@@ -3,46 +3,47 @@
 
 ## Objective
 
-To implement and understand **Simple and Linear Regression** using the Titanic dataset. This task includes data preprocessing, model training, evaluation, and visualization.
+This project involves implementing **Simple and Multiple Linear Regression** using the **Housing Price Prediction** dataset. The goal is to predict house prices based on features such as area, number of bedrooms, and bathrooms and task includes data preprocessing, model training, evaluation, and visualization.
 
 ---
 
 ## Dataset
 
-- Dataset: Titanic Dataset 
-- File Used: `train.csv`
-- Target for Regression: `Fare`
-- Feature: `Age`
+- **File:** `Housing.csv`
+- **Location:** `/kaggle/input/housing-price-prediction/Housing.csv`
+- **Target Variable:** `price`
+- **Features Used:** `area`, `bedrooms`, `bathrooms`
+
+---
+
+## Libraries Used
+
+- Python 
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
 
 ---
 
 ## Steps Followed
 
-### 1. Import and Preprocess the Dataset
-
-- Loaded the dataset using `pandas`
-- Selected relevant numeric features: `Age` and `Fare`
-- Handled missing values using `.dropna()`
-
-### 2. Split Data into Train-Test Sets
-
-- Used `train_test_split` from `sklearn.model_selection`
-- 80% training, 20% testing
-
-### 3. Fit a Linear Regression Model
-
-- Imported `LinearRegression` from `sklearn.linear_model`
-- Trained the model on training data (`X_train`, `y_train`)
-
-### 4. Evaluate the Model
-
-- Evaluated the model using:
-  - MAE (Mean Absolute Error)
-  - MSE (Mean Squared Error)
-  - R² Score
-- Used functions from `sklearn.metrics`
-
-### 5. Visualize Regression Line
-
-- Plotted regression line using `matplotlib`
-- Plot regression line and interpret coefficients.
+1. **Import and Load Dataset**
+    - Used `pandas` to read the CSV file.
+2. **Exploratory Data Analysis (EDA)**
+    - Checked data types and summary statistics.
+    - Handled missing values (if any).
+3. **Preprocessing**
+    - Selected numeric features (`area`, `bedrooms`, `bathrooms`).
+    - Encoded categorical variables if required.
+4. **Train-Test Split**
+    - Split data using `train_test_split` (80% train, 20% test).
+5. **Model Training**
+    - Trained `LinearRegression` model from `sklearn`.
+6. **Evaluation**
+    - Evaluated model using MAE, MSE, and R² Score.
+7. **Visualization**
+    - Plotted Actual vs Predicted prices.
+8. **Interpretation**
+    - Displayed model coefficients and intercept.
