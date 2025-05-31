@@ -45,5 +45,4 @@ To implement and understand **Simple and Linear Regression** using the Titanic d
 ### 5. Visualize Regression Line
 
 - Plotted regression line using `matplotlib`
-- Plotted actual vs predicted values to interpret the model fit
-
+- Plot regression line and interpret coefficients.
